@@ -1,0 +1,40 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --button-hover-color: #188ce8;
+  --white-color: #ffffff;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --background-dark-color: #2f303a;
+  --background-grey-color: #f5f4fa;
+  --background-light-color: #e5e5e5;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.section-title {
+  margin-top: 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}

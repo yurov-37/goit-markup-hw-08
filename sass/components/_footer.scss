@@ -1,0 +1,139 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: var(--background-dark-color);
+}
+
+.footer__flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address__link {
+  color: var(--footer-contacts-color);
+
+  line-height: 1.72;
+  text-decoration: none;
+  font-style: normal;
+
+  transition: color 250ms var(--timing-function);
+
+  &[target='_blank'] {
+    color: var(--white-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+// .address__link[target='_blank'] {
+//   color: var(--white-color);
+// }
+
+.footer__social {
+  margin-left: 70px;
+}
+
+.footer__title {
+  line-height: 1.14;
+  color: var(--white-color);
+  text-transform: uppercase;
+
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.social-networks__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.social-networks__icon--footer {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
+}
+
+.footer__subscribe {
+  margin-left: auto;
+}
+
+.form-box {
+  display: flex;
+}
+
+.footer-form {
+  width: 358px;
+}
+
+.footer-form__input {
+  font-size: 16px;
+  color: var(--white-color);
+
+  width: 100%;
+  margin: 0;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe-button {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  margin-left: 12px;
+  padding: 10px 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
+}
+
+.subscribe-button__icon {
+  margin-left: 10px;
+}
