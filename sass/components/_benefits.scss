@@ -1,15 +1,20 @@
-.benefits {
-  display: flex;
-}
+// .benefits {
+//   // display: flex;
+
+// }
 
 .benefits__item {
-  width: 270px;
+  max-width: 450px;
+  margin: 0 0 30px 0;
 
-  margin-left: 30px;
-
-  &:first-child {
-    margin-left: 0;
+  &:last-child {
+    margin: 0;
   }
+  // margin-left: 30px;
+
+  // &:first-child {
+  //   margin-left: 0;
+  // }
 }
 
 .benefits__thumb {
@@ -26,6 +31,7 @@
 .benefits__title {
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 14px;
@@ -33,9 +39,6 @@
 }
 
 .benefits__description {
-  margin-top: 0;
-  margin-bottom: 0;
-
   color: var(--secondary-text-color);
 
   line-height: 1.71;

@@ -1,9 +1,13 @@
 .hero {
-  height: 600px;
-  max-width: 1600px;
+  height: 400px;
+  // height: 600px;
+  // max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  // padding: 200px 0;
+  padding: 118px 0;
+
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/office.jpg);
   background-position-x: center;
@@ -13,7 +17,9 @@
 }
 
 .hero__container {
-  width: 696px;
+  // width: 696px;
+  max-width: 360px;
+
   padding-left: 0;
   padding-right: 0;
   margin-left: auto;
@@ -21,13 +27,14 @@
 }
 
 .hero__title {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 
   color: var(--white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  // font-size: 44px;
+  // line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
 }
 

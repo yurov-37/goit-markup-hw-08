@@ -1,25 +1,32 @@
-.page-header {
-  display: flex;
-  align-items: center;
-
+header {
   border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
+.page-header {
+  position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  // align-items: center;
+
+  height: 60px;
 }
+
+// .main-nav {
+//   display: flex;
+//   align-items: center;
+// }
 
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
 
   &--nopadding {
@@ -35,18 +42,57 @@
   }
 }
 
-.site-nav {
-  display: flex;
-  margin-left: 93px;
+.page-header__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
-.site-nav__item {
-  margin-right: 50px;
+.page-header__icon-cross {
+  display: none;
 
-  &:last-child {
-    margin-right: 0;
+  .page-header__button.is-open & {
+    display: block;
   }
 }
+
+.page-header__icon-menu {
+  .page-header__button.is-open & {
+    display: none;
+  }
+}
+
+.menu-dropdown {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  padding: 48px 83px 40px;
+  text-align: center;
+  background-color: var(--white-color);
+
+  &.is-open {
+    display: block;
+  }
+}
+
+// .site-nav {
+//   display: flex;
+//   margin-left: 93px;
+// }
+
+// .site-nav__item {
+//   margin-right: 50px;
+
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
 
 .site-nav__link {
   position: relative;
@@ -86,18 +132,18 @@
   }
 }
 
-.main-contact {
-  margin-left: auto;
-  display: flex;
-}
+// .main-contact {
+//   margin-left: auto;
+//   display: flex;
+// }
 
-.main-contact__item {
-  margin-right: 50px;
+// .main-contact__item {
+//   margin-right: 50px;
 
-  &:last-child {
-    margin-right: 0;
-  }
-}
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
 
 .main-contact__link {
   display: flex;
