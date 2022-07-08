@@ -8,6 +8,10 @@
 
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
+
+  // @media screen and (max-width: 767px) {
+  //   padding: 93px 15px;
+  // }
 }
 
 .backdrop.is-hidden {
@@ -25,12 +29,9 @@
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
 
-  // .backdrop.is-hidden & {
-  //   transform: translate(-50%, -50%) scale(0.5);
-  // }
-
   padding: 40px;
-  width: 528px;
+  max-width: 528px;
+  width: 100%;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);

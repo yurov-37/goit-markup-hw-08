@@ -20,7 +20,7 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header>
+    <!-- <header>
       <div class="page-header container">
         <nav class="main-nav">
           <a href="./index.html" lang="en" class="logo">
@@ -56,217 +56,468 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <!-- Главный контент страницы -->
     <!-- Список проектов -->
     <main>
       <section class="section">
         <h1 class="visually-hidden">Список проектов</h1>
-        <ul class="filter container">
-          <li class="filter__item">
-            <button type="button" class="filter__button filter__button--current">Все</button>
-          </li>
-          <li class="filter__item">
-            <button type="button" class="filter__button">Веб-сайты</button>
-          </li>
-          <li class="filter__item">
-            <button type="button" class="filter__button">Приложения</button>
-          </li>
-          <li class="filter__item"><button type="button" class="filter__button">Дизайн</button></li>
-          <li class="filter__item">
-            <button type="button" class="filter__button">Маркетинг</button>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="filter">
+            <li class="filter__item">
+              <button type="button" class="filter__button filter__button--current">Все</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
 
-        <ul class="projects container">
-          <li class="projects__item">
-            <a href="" class="projects__link"
-              ><div class="projects__thumb">
-                <img src="./images/techpark.jpg" alt="Сайт Технокряк" width="370" />
-                <div class="projects__overlay">
-                  <p class="projects__pre-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
+        <div class="container">
+          <ul class="projects">
+            <li class="projects__item">
+              <a href="" class="projects__link"
+                ><div class="projects__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project1desk-min.jpg   1x,
+                        ./images/projects/project1deskx2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project1tab-min.jpg   1x,
+                        ./images/projects/project1tabx2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project1mob-min.jpg   1x,
+                        ./images/projects/project1mobx2-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
 
-              <div class="projects__description">
-                <h2 class="projects__title">Технокряк</h2>
-                <p class="projects__type">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a href="" class="projects__link"
-              ><div class="projects__thumb">
-                <img
-                  src="./images/neworleanposter.jpg"
-                  alt="Постер команды Нью Орлеан"
-                  width="370"
-                />
-                <div class="projects__overlay">
-                  <p class="projects__pre-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
+                    <img
+                      src="./images/projects/project1mob-min.jpg"
+                      alt="Сайт Технокряк"
+                      width="450"
+                    />
+                  </picture>
+
+                  <div class="projects__overlay">
+                    <p class="projects__pre-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="projects__description">
-                <h2 class="projects__title">
-                  Постер <span lang="en"> New Orlean vs Golden Star</span>
-                </h2>
-                <p class="projects__type">Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a href="" class="projects__link"
-              ><div class="projects__thumb">
-                <img src="./images/seafood.jpg" alt="Постер ресторана SeaFood" width="370" />
-                <div class="projects__overlay">
-                  <p class="projects__pre-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
+
+                <div class="projects__description">
+                  <h2 class="projects__title">Технокряк</h2>
+                  <p class="projects__type">Веб-сайт</p>
                 </div>
-              </div>
-              <div class="projects__description">
-                <h2 class="projects__title">Ресторан <span lang="en">Seafood</span></h2>
-                <p class="projects__type">Приложение</p>
-              </div>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a href="" class="projects__link"
-              ><div class="projects__thumb">
-                <img src="./images/projectprime.jpg" alt="Лого проекта Prime" width="370" />
-                <div class="projects__overlay">
-                  <p class="projects__pre-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link"
+                ><div class="projects__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project2desk-min.jpg   1x,
+                        ./images/projects/project2deskx2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project2tab-min.jpg   1x,
+                        ./images/projects/project2tabx2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project2mob-min.jpg   1x,
+                        ./images/projects/project2mobx2-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/projects/project2mob-min.jpg"
+                      alt="Постер команды Нью Орлеан"
+                      width="450"
+                    />
+                  </picture>
+
+                  <div class="projects__overlay">
+                    <p class="projects__pre-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="projects__description">
-                <h2 class="projects__title">Проект <span lang="en">Prime</span></h2>
-                <p class="projects__type">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a href="" class="projects__link"
-              ><div class="projects__thumb">
-                <img src="./images/projectboxes.jpg" alt="Лого проекта Boxes" width="370" />
-                <div class="projects__overlay">
-                  <p class="projects__pre-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
+                <div class="projects__description">
+                  <h2 class="projects__title">
+                    Постер <span lang="en"> New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="projects__type">Дизайн</p>
                 </div>
-              </div>
-              <div class="projects__description">
-                <h2 class="projects__title">Проект <span lang="en">Boxes</span></h2>
-                <p class="projects__type">Приложение</p>
-              </div>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a href="" class="projects__link"
-              ><div class="projects__thumb">
-                <img
-                  src="./images/websaitinspiration.jpg"
-                  alt="Сайт Inspiration has no Borders"
-                  width="370"
-                />
-                <div class="projects__overlay">
-                  <p class="projects__pre-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link"
+                ><div class="projects__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project3desk-min.jpg   1x,
+                        ./images/projects/project3deskx2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project3tab-min.jpg   1x,
+                        ./images/projects/project3tabx2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project3mob-min.jpg   1x,
+                        ./images/projects/project3mobx2-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/projects/project3mob-min.jpg"
+                      alt="Постер ресторана SeaFood"
+                      width="450"
+                    />
+                  </picture>
+
+                  <div class="projects__overlay">
+                    <p class="projects__pre-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="projects__description">
-                <h2 class="projects__title" lang="en">Inspiration has no Borders</h2>
-                <p class="projects__type">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a href="" class="projects__link"
-              ><div class="projects__thumb">
-                <img
-                  src="./images/limitededition.jpg"
-                  alt="Журнал со старницей издания Limited Edition"
-                  width="370"
-                />
-                <div class="projects__overlay">
-                  <p class="projects__pre-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
+                <div class="projects__description">
+                  <h2 class="projects__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="projects__type">Приложение</p>
                 </div>
-              </div>
-              <div class="projects__description">
-                <h2 class="projects__title">Издание <span lang="en">Limited Edition</span></h2>
-                <p class="projects__type">Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a href="" class="projects__link"
-              ><div class="projects__thumb">
-                <img src="./images/projectlab.jpg" alt="<Бирка LABELTAG" width="370" />
-                <div class="projects__overlay">
-                  <p class="projects__pre-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link"
+                ><div class="projects__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project4desk-min.jpg   1x,
+                        ./images/projects/project4deskx2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project4tab-min.jpg   1x,
+                        ./images/projects/project4tabx2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project4mob-min.jpg   1x,
+                        ./images/projects/project4mobx2-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/projects/project4mob-min.jpg"
+                      alt="Лого проекта Prime"
+                      width="450"
+                    />
+                  </picture>
+
+                  <div class="projects__overlay">
+                    <p class="projects__pre-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="projects__description">
-                <h2 class="projects__title">Проект <span lang="en">LAB</span></h2>
-                <p class="projects__type">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a href="" class="projects__link"
-              ><div class="projects__thumb">
-                <img
-                  src="./images/growingbusiness.jpg"
-                  alt="Сайт Growing Business на ноутбуке"
-                  width="370"
-                />
-                <div class="projects__overlay">
-                  <p class="projects__pre-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
+                <div class="projects__description">
+                  <h2 class="projects__title">Проект <span lang="en">Prime</span></h2>
+                  <p class="projects__type">Маркетинг</p>
                 </div>
-              </div>
-              <div class="projects__description">
-                <h2 class="projects__title" lang="en">Growing Business</h2>
-                <p class="projects__type">Приложение</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link"
+                ><div class="projects__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project5desk-min.jpg   1x,
+                        ./images/projects/project5deskx2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project5tab-min.jpg   1x,
+                        ./images/projects/project5tabx2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project5mob-min.jpg   1x,
+                        ./images/projects/project5mobx2-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/projects/project5mob-min.jpg"
+                      alt="Лого проекта Boxes"
+                      width="450"
+                    />
+                  </picture>
+
+                  <div class="projects__overlay">
+                    <p class="projects__pre-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__description">
+                  <h2 class="projects__title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="projects__type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link"
+                ><div class="projects__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project6desk-min.jpg   1x,
+                        ./images/projects/project6deskx2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project6tab-min.jpg   1x,
+                        ./images/projects/project6tabx2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project6mob-min.jpg   1x,
+                        ./images/projects/project6mobx2-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/projects/project6mob-min.jpg"
+                      alt="Сайт Inspiration has no Borders"
+                      width="450"
+                    />
+                  </picture>
+
+                  <div class="projects__overlay">
+                    <p class="projects__pre-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__description">
+                  <h2 class="projects__title" lang="en">Inspiration has no Borders</h2>
+                  <p class="projects__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link"
+                ><div class="projects__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project7desk-min.jpg   1x,
+                        ./images/projects/project7deskx2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project7tab-min.jpg   1x,
+                        ./images/projects/project7tabx2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project7mob-min.jpg   1x,
+                        ./images/projects/project7mobx2-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/projects/project7mob-min.jpg"
+                      alt="Журнал со старницей издания Limited Edition"
+                      width="450"
+                    />
+                  </picture>
+
+                  <div class="projects__overlay">
+                    <p class="projects__pre-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__description">
+                  <h2 class="projects__title">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="projects__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link"
+                ><div class="projects__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project8desk-min.jpg   1x,
+                        ./images/projects/project8deskx2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project8tab-min.jpg   1x,
+                        ./images/projects/project8tabx2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project8mob-min.jpg   1x,
+                        ./images/projects/project8mobx2-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/projects/project8mob-min.jpg"
+                      alt="<Бирка LABELTAG"
+                      width="450"
+                    />
+                  </picture>
+
+                  <div class="projects__overlay">
+                    <p class="projects__pre-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__description">
+                  <h2 class="projects__title">Проект <span lang="en">LAB</span></h2>
+                  <p class="projects__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link"
+                ><div class="projects__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project9desk-min.jpg   1x,
+                        ./images/projects/project9deskx2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project9tab-min.jpg   1x,
+                        ./images/projects/project9tabx2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project9mob-min.jpg   1x,
+                        ./images/projects/project9mobx2-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/projects/project9mob-min.jpg"
+                      alt="Сайт Growing Business на ноутбуке"
+                      width="450"
+                    />
+                  </picture>
+
+                  <div class="projects__overlay">
+                    <p class="projects__pre-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__description">
+                  <h2 class="projects__title" lang="en">Growing Business</h2>
+                  <p class="projects__type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Подвал сайта -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__flex container">
         <div class="footer__address">
           <a href="./index.html" lang="en" class="logo logo--nopadding">
@@ -362,6 +613,6 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

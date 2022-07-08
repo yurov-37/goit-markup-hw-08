@@ -48,6 +48,11 @@ header {
   padding: 0;
   border: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .page-header__icon-cross {
