@@ -18,6 +18,10 @@ body {
   font-size: 14px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .section {
   padding: 60px 0;
 }
@@ -243,11 +247,11 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
   padding: 48px 0;
   background-color: var(--white-color);
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 .mob-menu__container {
   max-width: 480px;
@@ -277,7 +281,7 @@ header {
   position: absolute;
   top: 15px;
   right: 15px;
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 0;
   border: none;
@@ -358,9 +362,9 @@ header {
 }
 
 .mob-soc__item {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
-.mob-soc__item:last-child {
+.mob-soc__item:first-child {
   border: none;
 }
 
