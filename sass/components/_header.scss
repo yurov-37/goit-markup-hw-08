@@ -3,19 +3,24 @@ header {
 }
 
 .page-header {
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // align-items: center;
 
   height: 60px;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
 }
 
-// .main-nav {
-//   display: flex;
-//   align-items: center;
-// }
+.main-nav {
+  display: none;
+
+  // display: flex;
+  align-items: center;
+}
 
 .logo {
   display: block;
@@ -55,49 +60,49 @@ header {
   }
 }
 
-.page-header__icon-cross {
-  display: none;
+// .page-header__icon-cross {
+//   display: none;
 
-  .page-header__button.is-open & {
-    display: block;
-  }
-}
-
-.page-header__icon-menu {
-  .page-header__button.is-open & {
-    display: none;
-  }
-}
-
-.menu-dropdown {
-  display: none;
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-
-  padding: 48px 83px 40px;
-  text-align: center;
-  background-color: var(--white-color);
-
-  &.is-open {
-    display: block;
-  }
-}
-
-// .site-nav {
-//   display: flex;
-//   margin-left: 93px;
-// }
-
-// .site-nav__item {
-//   margin-right: 50px;
-
-//   &:last-child {
-//     margin-right: 0;
+//   .page-header__button.is-open & {
+//     display: block;
 //   }
 // }
+
+// .page-header__icon-menu {
+//   .page-header__button.is-open & {
+//     display: none;
+//   }
+// }
+
+// .menu-dropdown {
+//   display: none;
+
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   width: 100%;
+
+//   padding: 48px 83px 40px;
+//   text-align: center;
+//   background-color: var(--white-color);
+
+//   &.is-open {
+//     display: block;
+//   }
+// }
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
 .site-nav__link {
   position: relative;
@@ -137,18 +142,20 @@ header {
   }
 }
 
-// .main-contact {
-//   margin-left: auto;
-//   display: flex;
-// }
+.main-contact {
+  // margin-left: auto;
+  // display: flex;
 
-// .main-contact__item {
-//   margin-right: 50px;
+  display: none;
+}
 
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
+.main-contact__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
 .main-contact__link {
   display: flex;
