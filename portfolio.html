@@ -20,12 +20,10 @@
 
   <body>
     <!-- Шапка сайта -->
-    <!-- <header>
+    <header>
       <div class="page-header container">
+        <a href="./index.html" lang="en" class="logo"> <span class="logo__web">Web</span>Studio</a>
         <nav class="main-nav">
-          <a href="./index.html" lang="en" class="logo">
-            <span class="logo__web">Web</span>Studio</a
-          >
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студия</a>
@@ -55,8 +53,53 @@
             >
           </li>
         </ul>
+        <button type="button" class="page-header__button">
+          <svg width="40" height="40">
+            <use class="page-header__icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu__container">
+          <button type="button" class="mob-menu__close-button">
+            <svg width="40" height="40">
+              <use class="page-header__icon-cross" href="./images/icons.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="mob-menu__top">
+            <ul class="mob-nav">
+              <li class="mob-nav__item">
+                <a href="./index.html" class="mob-nav__link">Студия</a>
+              </li>
+              <li class="mob-nav__item">
+                <a href="./portfolio.html" class="mob-nav__link mob-nav__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-nav__item"><a href="" class="mob-nav__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="mob-contact">
+              <li class="mob-contact__item">
+                <a href="tel:+380961111111" class="mob-contact__tel"> +38 096 111 11 11</a>
+              </li>
+              <li class="mob-contact__item">
+                <a href="mailto:info@devstudio.com" class="mob-contact__mail">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-soc">
+              <li class="mob-soc__item"><a href="#" class="mob-soc__link">Twitter</a></li>
+              <li class="mob-soc__item"><a href="#" class="mob-soc__link">Facebook</a></li>
+              <li class="mob-soc__item"><a href="#" class="mob-soc__link">LinkedIn</a></li>
+              <li class="mob-soc__item"><a href="#" class="mob-soc__link">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Главный контент страницы -->
     <!-- Список проектов -->
@@ -614,5 +657,6 @@
         </div>
       </div>
     </footer> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

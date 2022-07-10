@@ -34,13 +34,11 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  display: inline-block;
+  display: block;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
-
-  // margin-left: auto;
 
   &:hover,
   &:focus {

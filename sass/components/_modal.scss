@@ -9,9 +9,11 @@
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
 
-  // @media screen and (max-width: 767px) {
-  //   padding: 93px 15px;
-  // }
+  overflow-y: scroll;
+
+  @media screen and (max-width: 767px) {
+    padding: 93px 15px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -24,13 +26,13 @@
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
 
   padding: 40px;
-  max-width: 528px;
+  max-width: 450px;
   width: 100%;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -38,16 +40,28 @@
   border-radius: 4px;
 
   transition: 250ms var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+  }
 }
 
 .modal-form__title {
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
 
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__field {
@@ -69,18 +83,6 @@
     border: 1px solid var(--accent-color);
   }
 }
-
-// .modal-form__field--last {
-//   margin-bottom: 0;
-// }
-
-// .modal-form__field:focus-within > .modal-form__input {
-//   border: 1px solid var(--accent-color);
-// }
-
-// .modal-form__field:focus-within > .modal-form__svg {
-//   fill: var(--accent-color);
-// }
 
 .modal-form__label {
   margin-bottom: 4px;
@@ -132,10 +134,14 @@
 .checkbox {
   position: relative;
   display: inline-flex;
+  flex-wrap: nowrap;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
-  margin-left: 14px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 14px;
+  }
 }
 
 .checkbox__input {
@@ -177,15 +183,25 @@
 }
 
 .checkbox__label {
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--secondary-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link {
-  margin-left: 4px;
-
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.17px;
+  // margin-left: 4px;
   color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71px;
+  }
 }
 
 .send-button {
