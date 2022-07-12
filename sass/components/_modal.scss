@@ -12,7 +12,7 @@
   overflow-y: scroll;
 
   @media screen and (max-width: 767px) {
-    padding: 93px 15px;
+    padding: 10px;
   }
 }
 
@@ -41,7 +41,7 @@
 
   transition: 250ms var(--timing-function);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 450px) {
     position: absolute;
   }
 
@@ -74,14 +74,6 @@
   &--last {
     margin-bottom: 0;
   }
-
-  &:focus-within > .modal-form__svg {
-    fill: var(--accent-color);
-  }
-
-  &:focus-within > .modal-form__input {
-    border: 1px solid var(--accent-color);
-  }
 }
 
 .modal-form__label {
@@ -99,6 +91,11 @@
   left: 14px;
 
   transition: fill 250ms var(--timing-function);
+
+  .modal-form__field:hover > &,
+  .modal-form__field:focus-within > & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form__input {
@@ -114,6 +111,11 @@
 
   &:hover {
     cursor: pointer;
+  }
+
+  .modal-form__field:hover > &,
+  .modal-form__field:focus-within > & {
+    border: 1px solid var(--accent-color);
   }
 }
 
@@ -132,15 +134,14 @@
 }
 
 .checkbox {
-  position: relative;
-  display: inline-flex;
-  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
-    margin-left: 14px;
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -156,30 +157,39 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-
-  &:checked ~ .checkbox__icon-check {
-    opacity: 1;
-  }
-
-  &:checked + .checkbox__icon-frame {
-    opacity: 0;
-  }
-
-  &:focus + .checkbox__icon-frame {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-  }
 }
 
-.checkbox__icon-frame {
+.checkbox__privacy {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 7px;
-  opacity: 1;
-  transition: opacity 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  border-radius: 3px;
+
+  transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function),
+    outline 250ms var(--timing-function);
+
+  .checkbox__input:checked + & {
+    background-color: var(--accent-color);
+    border: none;
+  }
+
+  .checkbox__input:focus + & {
+    border: 1px solid var(--accent-color);
+    outline: 2px solid var(--primary-text-color);
+  }
 }
 
-.checkbox__icon-check {
-  position: absolute;
-  opacity: 0;
-  transition: opacity 250ms var(--timing-function);
+.checkbox__icon {
+  fill: transparent;
+  transition: fill 250ms var(--timing-function);
+
+  .checkbox__input:checked + .checkbox__privacy & {
+    fill: var(--white-color);
+  }
 }
 
 .checkbox__label {
@@ -194,13 +204,12 @@
 
 .checkbox__link {
   font-size: 12px;
-  line-height: 1.17px;
-  // margin-left: 4px;
+  line-height: 1.17;
   color: var(--accent-color);
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
   }
 }
 
