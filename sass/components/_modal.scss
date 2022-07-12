@@ -41,7 +41,7 @@
 
   transition: 250ms var(--timing-function);
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 480px) {
     position: absolute;
   }
 
@@ -139,6 +139,13 @@
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--secondary-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   &:hover {
     cursor: pointer;
@@ -192,25 +199,8 @@
   }
 }
 
-.checkbox__label {
-  font-size: 12px;
-  line-height: 1.17;
-  color: var(--secondary-text-color);
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.71;
-  }
-}
-
 .checkbox__link {
-  font-size: 12px;
-  line-height: 1.17;
   color: var(--accent-color);
-
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.71;
-  }
 }
 
 .send-button {
