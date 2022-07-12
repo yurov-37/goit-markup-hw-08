@@ -311,13 +311,23 @@ header {
   }
 }
 
-.main-contact__icon {
+.main-contact__icon--tab {
   margin-right: 8px;
+  display: none;
+}
+@media screen and (max-width: 1199px) {
+  .main-contact__icon--tab {
+    display: block;
+  }
+}
+.main-contact__icon {
+  display: none;
+  margin-right: 10px;
   fill: currentColor;
 }
 @media screen and (min-width: 1200px) {
   .main-contact__icon {
-    margin-right: 10px;
+    display: block;
   }
 }
 
@@ -466,8 +476,8 @@ header {
   padding: 118px 0;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/heromob-min.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/heromob-min.jpg);
-  background-position-x: center;
   background-color: #c4c4c4;
+  background-size: cover;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1455,6 +1465,13 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(101%);
           transform: translateY(101%);
@@ -1463,24 +1480,20 @@ header {
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
   opacity: 1;
-  overflow-y: auto;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 350px) {
+  .projects__overlay {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .projects__pre-text {
-  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-color);
-}
-@media screen and (min-width: 768px) {
-  .projects__pre-text {
-    padding: 49px 24px 77px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .projects__pre-text {
-    padding: 63px 24px;
-  }
 }
 
 .projects__description {
