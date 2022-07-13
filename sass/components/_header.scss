@@ -179,6 +179,9 @@ header {
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+
     .main-contact__item:first-child & {
       padding-top: 21px;
     }
