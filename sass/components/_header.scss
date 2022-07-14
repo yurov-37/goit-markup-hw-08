@@ -77,7 +77,6 @@ header {
 
   @media screen and (min-width: 768px) {
     display: block;
-    // align-items: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -202,6 +201,7 @@ header {
 
 .main-contact__icon--tab {
   margin-right: 8px;
+  fill: currentColor;
 
   @media screen and (max-width: 1199px) {
     display: block;
