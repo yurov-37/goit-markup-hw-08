@@ -60,6 +60,8 @@ header {
   border: none;
   background-color: transparent;
 
+  transition: fill 250ms var(--timing-function);
+
   &:hover,
   &:focus {
     fill: var(--accent-color);
@@ -74,17 +76,17 @@ header {
   display: none;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
+    display: block;
+    // align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 
 .site-nav {
   display: flex;
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-  }
 }
 
 .site-nav__item {

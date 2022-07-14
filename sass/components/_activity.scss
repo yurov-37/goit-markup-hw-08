@@ -2,14 +2,13 @@
   padding-top: 0;
   padding-bottom: 94px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.5px) {
     display: none;
   }
 }
 
 .activity-section__list {
   display: flex;
-  margin-top: 50px;
 }
 
 .activity-picture {
