@@ -386,6 +386,7 @@ header {
 }
 
 .mob-menu.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
   -webkit-transform: translatey(-100%);
